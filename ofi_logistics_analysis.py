@@ -1,5 +1,5 @@
-# Python analysis visible to the user: loading the provided CSV and performing cleaning + key analyses.
-# Outputs: cleaned CSV, summary tables, and several charts saved under /mnt/data/ofi_analysis_outputs/
+# loading the ofi_deliveries.csv dataset CSV and performing cleaning + key analyses.
+# Outputs: cleaned CSV, summary tables, and several charts saved under /ofi_analysis_outputs/
 # Note: This code runs in the notebook environment and will display key tables and figures to you.
 
 import os
