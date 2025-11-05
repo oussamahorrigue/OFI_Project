@@ -155,7 +155,7 @@ OFI_Project/
 
 ### Insights Summary
 
-The first analysis i made focused on examining whether transportation costs vary by destination country. To explore this, I created a chart showing the average transport cost per kilometer by country, as illustrated in the figure below.
+#### 1. The first analysis i made focused on examining whether transportation costs vary by destination country. To explore this, I created a chart showing the average transport cost per kilometer by country, as illustrated in the figure below.
 
 ![Average cost per km by country](/ofi_analysis_outputs/avg_cost_per_km_by_country.png)
 
@@ -178,7 +178,7 @@ The first analysis i made focused on examining whether transportation costs vary
 
 - Further route-level or warehouse-level analysis could reveal where bottlenecks occur.
 
-The second analysis i made aimed to understand how much each client spends on transportation. I wanted to identify whether certain clients account for disproportionately high logistics costs, which could help pinpoint potential inefficiencies or cost concentration. To explore this, I created a chart showing the top 15 clients by total transport cost, as illustrated in the figure below.
+#### 2. The second analysis i made aimed to understand how much each client spends on transportation. I wanted to identify whether certain clients account for disproportionately high logistics costs, which could help pinpoint potential inefficiencies or cost concentration. To explore this, I created a chart showing the top 15 clients by total transport cost, as illustrated in the figure below.
 
 ![top 15 clients total cost](/ofi_analysis_outputs/top15_clients_total_cost.png)
 
@@ -194,7 +194,7 @@ The second analysis i made aimed to understand how much each client spends on tr
   Since volume and delay don’t show a strong link, client-specific issues are unlikely the main delay cause.
   Instead, geographic or route-level inefficiencies appear more relevant.
 
-**Further analysis was necessary, as neither cost per kilometer nor client behavior adequately explained the delivery delays. Therefore, I conducted a correlation analysis between delivery delays and multiple operational parameters to identify which factors have the greatest impact on delay performance as shown in the table below, which includes variables such as transport_cost_eur, volume_kg, product_type, destination_country, distance_km, origin_warehouse, destination_city, date, and month, along with their corresponding correlation coefficients. These coefficients indicate the strength and direction of the relationship between each variable and delivery delays where a value close to 0 signifies no relationship, and a value close to 1 (or -1) represents a strong positive (or negative) relationship.**
+#### 3. Further analysis was necessary, as neither cost per kilometer nor client behavior adequately explained the delivery delays. Therefore, I conducted a correlation analysis between delivery delays and multiple operational parameters to identify which factors have the greatest impact on delay performance as shown in the table below, which includes variables such as transport_cost_eur, volume_kg, product_type, destination_country, distance_km, origin_warehouse, destination_city, date, and month, along with their corresponding correlation coefficients. These coefficients indicate the strength and direction of the relationship between each variable and delivery delays where a value close to 0 signifies no relationship, and a value close to 1 (or -1) represents a strong positive (or negative) relationship.\*\*
 
 ![Insights Summary Table](/Insights_summary_table.png)
 
