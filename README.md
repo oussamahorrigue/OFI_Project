@@ -155,8 +155,6 @@ OFI_Project/
 
 ### Insights Summary
 
-#### Average Cost per km by Country
-
 The first analysis i made focused on examining whether transportation costs vary by destination country. To explore this, I created a chart showing the average transport cost per kilometer by country, as illustrated in the figure below.
 
 ![Average cost per km by country](/ofi_analysis_outputs/avg_cost_per_km_by_country.png)
