@@ -155,6 +155,49 @@ OFI_Project/
 
 ### Insights Summary
 
+#### Average Cost per km by Country
+
+The first analysis i made focused on examining whether transportation costs vary by destination country. To explore this, I created a chart showing the average transport cost per kilometer by country, as illustrated in the figure below.
+
+![Average cost per km by country](/ofi_analysis_outputs/avg_cost_per_km_by_country.png)
+
+### Interpretation
+
+- Cost Efficiency:
+  Average cost per km is quite consistent across countries (≈ €1.03–€1.05/km), suggesting that transport rates are standardized across routes and logistics providers.
+
+- Delay Impact:
+  Countries with longer distances (e.g., Spain and Italy) show higher average delays (~2 hours), which is expected due to route length and border crossings.
+
+- Operational Insight:
+  Countries like Germany and the Netherlands show lower average delay hours and strong delivery volumes, indicating efficient domestic logistics and possibly better road networks or warehouse proximity.
+
+### Conclusion
+
+- The cost efficiency per km is stable, meaning pricing strategies are likely optimized.
+
+- Delay issues are more related to distance and route complexity than cost per km — this indicates operational (not financial) inefficiencies cause delays.
+
+- Further route-level or warehouse-level analysis could reveal where bottlenecks occur.
+
+The second analysis i made aimed to understand how much each client spends on transportation. I wanted to identify whether certain clients account for disproportionately high logistics costs, which could help pinpoint potential inefficiencies or cost concentration. To explore this, I created a chart showing the top 15 clients by total transport cost, as illustrated in the figure below.
+
+![top 15 clients total cost](/ofi_analysis_outputs/top15_clients_total_cost.png)
+
+### Interpretation
+
+- Cost Drivers:
+  The highest-spending clients (Client_21, 18, 25, 24) correspond to high-volume, frequent deliveries, suggesting bulk clients or key accounts driving cost concentration.
+
+- Delays:
+  Average delay hours for top clients hover around 1.2–1.7 hours, with no major outliers — meaning delays are evenly distributed across clients, not client-specific.
+
+- Operational Focus:
+  Since volume and delay don’t show a strong link, client-specific issues are unlikely the main delay cause.
+  Instead, geographic or route-level inefficiencies appear more relevant.
+
+**Further analysis was necessary, as neither cost per kilometer nor client behavior adequately explained the delivery delays. Therefore, I conducted a correlation analysis between delivery delays and multiple operational parameters to identify which factors have the greatest impact on delay performance as shown in the table below, which includes variables such as transport_cost_eur, volume_kg, product_type, destination_country, distance_km, origin_warehouse, destination_city, date, and month, along with their corresponding correlation coefficients. These coefficients indicate the strength and direction of the relationship between each variable and delivery delays where a value close to 0 signifies no relationship, and a value close to 1 (or -1) represents a strong positive (or negative) relationship.**
+
 ![Insights Summary Table](/Insights_summary_table.png)
 
 ### Key Findings
