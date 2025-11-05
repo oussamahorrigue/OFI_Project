@@ -124,7 +124,6 @@ OFI_Project/
 │   ├── high_cost_routes.csv
 │   ├── ofi_deliveries_cleaned.csv
 │   ├── top15_clients_total_cost.png
-│   └── other result files
 │
 └── README.md                                 # Project documentation
 
