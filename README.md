@@ -94,20 +94,41 @@ Handling these appropriately was a key focus of the analysis.
 
 ## 🧩 Repository Structure
 
-```
+````
+```plaintext
 OFI_Project/
 │
-├── ofi_deliveries.csv                # Raw dataset
-├── ofi_logistics_analysis.py         # Main Python analysis script
-├── ofi_analysis_outputs/             # Cleaned data, visualizations, summaries
-│   ├── ofi_deliveries_cleaned.csv
-│   ├── cost_by_country.csv
+├── ofi_deliveries.csv                        # Raw dataset
+├── ofi_logistics_analysis.py                 # Main Python analysis script
+├── recommendation_table.png                  # Recommendation summary visualization
+├── Insights_summary_table.png                # Key insights summary table
+│
+├── ofi_analysis_outputs/                     # Cleaned data, visualizations, summaries
+│   ├── avg_cost_per_km_by_country.png
+│   ├── city_clusters.csv
 │   ├── client_segments.csv
-│   ├── delay_vs_*.png                (correlation plots)
-│   ├── summary_tables.csv
+│   ├── corr_delay_vs_date.png
+│   ├── corr_delay_vs_destination_city.png
+│   ├── corr_delay_vs_destination_country.png
+│   ├── corr_delay_vs_distance.png
+│   ├── corr_delay_vs_month.png
+│   ├── corr_delay_vs_origin_warehouse.png
+│   ├── corr_delay_vs_product_type.png
+│   ├── corr_delay_vs_transport_cost.png
+│   ├── corr_delay_vs_volume.png
+│   ├── cost_by_client.csv
+│   ├── cost_by_country.csv
+│   ├── delay_correlations_summary.csv
+│   ├── delivery_performance_by_country.csv
+│   ├── distance_vs_delay_scatter.png
+│   ├── high_cost_routes.csv
+│   ├── ofi_deliveries_cleaned.csv
+│   ├── top15_clients_total_cost.png
 │   └── other result files
-└── README.md                         # Project documentation
-```
+│
+└── README.md                                 # Project documentation
+
+````
 
 ### Setup & Execution
 
